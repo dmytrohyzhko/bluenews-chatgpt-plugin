@@ -1,0 +1,18 @@
+{
+    "schema_version": "v1",
+    "name_for_human": "blue News",
+    "name_for_model": "blueNews",
+    "description_for_human": "Stay updated with the latest news from blue News.",
+    "description_for_model": "Experience a comprehensive news coverage with blueNews. Stay informed and up-to-date with the most recent developments, trending topics, and breaking news from around the world.",
+    "auth": {
+        "type": "none"
+    },
+    "api": {
+        "type": "openapi",
+        "url": "https://<REPLACE_YOUR_SERVER_URL>/openai.yaml",
+        "is_user_authenticated": false
+    },
+    "logo_url": "https://<REPLACE_YOUR_SERVER_URL>/logo.jpeg",
+    "contact_email": "AI.coffee@blue.ch",
+    "legal_info_url": "https://www.bluewin.ch/de/campaign/online-datenschutz-854024.html"
+}

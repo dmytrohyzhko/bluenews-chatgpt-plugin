@@ -1,0 +1,42 @@
+openapi: 3.0.1
+info:
+  title: blue News
+  description: Stay updated with the latest news from blue News.
+  version: 'v1'
+servers:
+  - url: https://<REPLACE_YOUR_SERVER_URL>
+paths:
+  /getNewsByDate:
+    get:
+      operationId: getNewsByDate
+      summary: Get News By Date
+      parameters:
+        - name: date
+          in: query
+          description: The date for which news is to be retrieved
+          required: true
+          schema:
+            type: string
+            example: "2023-09-12"
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json: {}
+  /getNewsByQuery:
+    get:
+      operationId: getNewsByQuery
+      summary: Get News By Query
+      parameters:
+        - name: query
+          in: query
+          description: The query for which news is to be retrieved
+          required: true
+          schema:
+            type: string
+            example: "food"
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json: {}
